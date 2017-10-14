@@ -1,0 +1,42 @@
+/******************************************* 
+    Styles By BeingOnline - GENERIC
+    Reset and/or normalize styles, box-sizing definition, etc. 
+    This is the first layer which generates actual CSS.
+********************************************/
+
+/*
+	Twitter Bootstrap 4 Generic
+*/
+
+    // Reset and dependencies
+    @import "./node_modules/bootstrap/scss/print";
+    
+    // Global resets to common HTML elements and more for easier usage by Bootstrap.
+    @import "./node_modules/bootstrap/scss/reboot";
+
+    // Shared declarations for certain elements.
+    @import "./node_modules/bootstrap/scss/type";
+
+/*
+    Slick.js
+*/
+    // Adding Slick js styling to project
+    @import "./node_modules/slick-carousel/slick/slick.scss"; 
+
+
+/*
+	Project Generic
+*/
+
+    /* Assigning box model */
+    *,
+    *:after,
+    *:before {
+      @include box-sizing(border-box);
+    }
+
+    /* Placeholder Styling */
+    @include placeholder {
+        font-size: $font-size-h6;
+    }
+
